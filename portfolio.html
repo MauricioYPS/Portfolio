@@ -8,7 +8,6 @@
     <meta name="description"
         content="Portafolio de Mauricio Yepes – desarrollador web full‑stack. Proyectos, experiencia, skills y contacto." />
 
-    <!-- Tailwind CDN (prototipo) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -17,7 +16,6 @@
                 extend: {
                     fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Cantarell", "Helvetica Neue", "Arial", "sans-serif"] },
                     colors: {
-                        /* Paleta azul/teal */
                         brand: {
                             50: '#ecfeff', 100: '#cffafe', 200: '#a5f3fc', 300: '#67e8f9', 400: '#22d3ee',
                             500: '#06b6d4', 600: '#0891b2', 700: '#0e7490', 800: '#155e75', 900: '#164e63'
@@ -59,7 +57,6 @@
             }
         }
 
-        /* Helpers */
         .will-reveal {
             opacity: 0;
             transform: translateY(14px) scale(.98)
@@ -171,7 +168,7 @@
                 </a>
                 <nav class="hidden md:flex items-center gap-6 text-sm uppercase tracking-wide">
                     <a href="#proyectos" class="hover:text-brand-300"> Proyectos</a>
-                    <a href="#skills" class="hover:text-brand-300"> Skills</a>
+                    <a href="#skills" class="hover:text-brand-300"> Habilidades</a>
                     <a href="#experiencia" class="hover:text-brand-300"> Experiencia</a>
                     <a href="#estudios" class="hover:text-brand-300"> Estudios</a>
                     <a href="#about" class="hover:text-brand-300"> About</a>
@@ -191,7 +188,7 @@
         <div id="mobileMenu" class="md:hidden hidden border-t border-slate-800 bg-slate-950/95">
             <div class="mx-auto max-w-7xl px-4 py-3 flex flex-col gap-3 text-sm uppercase tracking-wide">
                 <a href="#proyectos" class="hover:text-brand-300"> Proyectos</a>
-                <a href="#skills" class="hover:text-brand-300"> Skills</a>
+                <a href="#skills" class="hover:text-brand-300"> Habilidades</a>
                 <a href="#experiencia" class="hover:text-brand-300"> Experiencia</a>
                 <a href="#estudios" class="hover:text-brand-300"> Estudios</a>
                 <a href="#about" class="hover:text-brand-300"> About</a>
@@ -205,7 +202,6 @@
         </div>
     </header>
 
-    <!-- HERO con breve descripción + tilt + parallax inverso -->
     <section id="inicio" class="relative overflow-hidden">
         <div class="absolute inset-0 -z-10 bg-gradient-to-br from-brand-900 via-slate-900 to-slate-950"></div>
         <div
@@ -296,7 +292,7 @@
             <div class="flex items-end justify-between gap-4">
                 <div>
                     <h2 class="heading-badge text-3xl font-bold tracking-tight">Proyectos</h2>
-                    <p class="mt-2 text-slate-300">Trabajos reales y experimentos personales.</p>
+                    <p class="mt-2 text-slate-300">Trabajos reales y proyectos personales.</p>
                 </div>
                 <a href="https://github.com/MauricioYPS" target="_blank" rel="noopener"
                     class="text-brand-300 hover:underline text-sm">GitHub →</a>
@@ -377,15 +373,12 @@
         </div>
     </section>
 
-    <!-- SKILLS: marquee con bucle suave y espacio separador (solo los que indicaste) -->
     <section id="skills" class="py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h2 class="heading-badge text-3xl font-bold tracking-tight">Tech Arsenal</h2>
 
             <div class="mt-8 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60">
-                <!-- Track: duplicamos el set + separador largo para loop sin salto brusco -->
                 <div class="marquee-track flex items-center gap-10 py-6">
-                    <!-- Set A -->
                     <div class="flex items-center gap-10 px-6 shrink-0">
                         <img alt="HTML5" class="h-10"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
@@ -406,9 +399,9 @@
                         <img alt="Redux" class="h-10"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
                     </div>
-                    <!-- Separador para indicar reinicio -->
+                    
                     <div class="shrink-0 w-40 sm:w-64"></div>
-                    <!-- Set B (copia) -->
+
                     <div class="flex items-center gap-10 px-6 shrink-0" aria-hidden="true">
                         <img alt="HTML5" class="h-10"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
@@ -523,15 +516,14 @@
         </div>
     </section>
 
-    <!-- ESTUDIOS (con MindHub + Acreditta y Unillanos) -->
     <section id="estudios" class="py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h2 class="heading-badge text-3xl font-bold tracking-tight">Educación</h2>
             <div class="mt-8 grid sm:grid-cols-2 gap-6">
-                <!-- Certificación Full‑Stack MindHub -->
+
                 <div class="rounded-2xl border border-slate-800 p-6 bg-slate-900/60 hover:shadow-glow transition">
                     <div class="flex items-center gap-4">
-                        <!-- Badge/medalla -->
+
                         <img src="assets/insignia.png" alt="Universidad de los Llanos"
                             class="h-12 w-12 object-contain bg-white/5 rounded-full p-1"
                             onerror="this.style.display='none'">
@@ -554,7 +546,7 @@
                     </a>
                 </div>
 
-                <!-- Universidad de los Llanos -->
+
                 <div class="rounded-2xl border border-slate-800 p-6 bg-slate-900/60 hover:shadow-glow transition">
                     <div class="flex items-center gap-4">
                         <img src="assets/unillanos.png" alt="Universidad de los Llanos"
@@ -574,7 +566,6 @@
 
     <!-- CONTACTO -->
     <section id="contacto" class="py-20 border-t border-slate-200 dark:border-slate-800 relative overflow-hidden">
-        <!-- blobs decorativos -->
         <div class="pointer-events-none absolute inset-0 mx-auto max-w-7xl blur-3xl opacity-40" aria-hidden="true">
             <div class="h-40 w-40 rounded-full bg-brand-500/30 absolute -top-6 -left-10"></div>
             <div class="h-40 w-40 rounded-full bg-sky-300/30 absolute bottom-0 right-0"></div>
